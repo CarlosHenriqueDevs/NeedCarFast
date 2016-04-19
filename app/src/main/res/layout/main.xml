@@ -1,11 +1,54 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+	android:id="@+id/gameLinearLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" />
 
-</LinearLayout>
+    <LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="bottom"
+	android:layout_marginBottom="50dp"
+	android:orientation="horizontal" >
+
+	<ImageButton
+	    android:id="@+id/move_left"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:src="@drawable/dpad_left" />
+
+	<ImageButton
+	    android:id="@+id/move_right"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="35dp"
+	    android:src="@drawable/dpad_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	android:layout_marginLeft="48dp" >
+
+	<ImageButton
+	    android:id="@+id/move_top"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_marginBottom="50dp"
+	    android:src="@drawable/dpad_up" />
+
+	<ImageButton
+	    android:id="@+id/move_bottom"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:src="@drawable/dpad_bottom" />
+
+    </LinearLayout>
+
+</FrameLayout>
